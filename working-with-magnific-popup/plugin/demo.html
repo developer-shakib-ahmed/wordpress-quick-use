@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnific Popup - Demo</title>
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+</head>
+<body>
+    <a class="popup-modal" href="#test-modal-1">Open modal</a>
+
+    <div id="test-modal-1" class="white-popup-block mfp-hide">
+        <h1>Modal dialog</h1>
+        <p>You won't be able to dismiss this by usual means (escape or
+            click button), but you can close it programatically based on
+            user choices or actions.</p>
+        <p><a class="popup-modal-dismiss" href="#">Dismiss</a></p>
+    </div>
+
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        jQuery(function () {
+            jQuery('.popup-modal').magnificPopup({
+                type: 'inline',
+                preloader: false,
+                focus: '#username',
+                modal: true
+            });
+            jQuery(document).on('click', '.popup-modal-dismiss', function (e) {
+                e.preventDefault();
+                jQuery.magnificPopup.close();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* Controls
+---------------------------------------------------------------------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+div#mixitup{
+    background-color: #f2f2f2;
+    height: 100vh;
+}
+
+div#mixitup div.wrap {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+div#mixitup .controls {
+    padding: 1rem;
+    background: #333;
+    display: flex;
+    justify-content: center;
+}
+
+div#mixitup .control {
+    position: relative;
+    display: inline-block;
+    background: #444;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    transition: background 150ms;
+    outline: 0;
+    border: 0;
+    border-radius: 0 !important;
+    padding: 5px 10px;
+    margin: 0px 10px;
+}
+
+div#mixitup .control:hover {
+    background: #3f3f3f;
+}
+
+div#mixitup .mixitup-control-active {
+    background: #393939;
+}
+
+/* Container
+---------------------------------------------------------------------- */
+
+div#mixitup .mixitup {
+    margin-top: 15px;
+}
+
+div#mixitup .mixitup:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Target Elements
+---------------------------------------------------------------------- */
+
+div#mixitup .mix {
+    background: #ddd;
+    position: relative;
+    width: 31.33%;
+    padding: 0;
+    float: left;
+    margin: 0px 1% 20px;
+}
+
+div#mixitup .mix img{
+    display: block;
+    max-width: 100%;
+}
+
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+
+@media screen and (min-width: 767px) {
+    div#mixitup .mixitup {
+
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    div#mixitup .mixitup {
+
+    }
+}
+
+

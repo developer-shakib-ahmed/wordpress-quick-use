@@ -1,0 +1,6 @@
+# END WordPress
+
+php_value upload_max_filesize 128M
+php_value post_max_size 128M
+php_value max_execution_time 600
+php_value max_input_time 300

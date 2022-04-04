@@ -1,0 +1,40 @@
+div#slider div.owl-nav {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+div#slider div.owl-nav div.owl-prev {
+    float: left;
+    position: relative;
+    left: 0;
+}
+div#slider div.owl-nav div.owl-next {
+    float: right;
+    position: relative;
+    right: 0;
+    background: transparent!important;
+    transform: rotate(180deg);
+}
+div#slider div.owl-nav img {
+    display: block;
+}
+div#slider div.owl-dots {
+    text-align: center;
+    margin-top: 40px;
+}
+div#slider div.owl-dot {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border: 2px solid #fff;
+    margin: 0px 5px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+div#slider div.owl-dot:hover, div#slider div.owl-dot.active {
+    background-color: #fff;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mix it Up V3</title>
+	<link rel="stylesheet" href="mix-it-up/style.css">
+</head>
+<body>
+
+	<div id="mixitup">
+
+		<div class="wrap">
+			<div class="controls">
+				<button type="button" class="control" data-filter="all">All</button>
+				<button type="button" class="control" data-filter=".green">Green</button>
+				<button type="button" class="control" data-filter=".blue">Blue</button>
+				<button type="button" class="control" data-filter=".pink">Pink</button>
+				<!-- <button type="button" class="control" data-filter="none">None</button> -->
+			</div>
+
+			<div class="mixitup">
+				<div class="mix green">
+					<img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+				</div>
+				<div class="mix blue">
+					<img src="https://images.pexels.com/photos/11143927/pexels-photo-11143927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+				</div>
+				<div class="mix pink">
+					<img src="https://images.pexels.com/photos/2433467/pexels-photo-2433467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+				</div>
+				<div class="mix pink">
+					<img src="https://images.pexels.com/photos/1507609/pexels-photo-1507609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+				</div>
+				<div class="mix pink">
+					<img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+				</div>
+				<div class="mix pink">
+					<img src="https://images.pexels.com/photos/11143927/pexels-photo-11143927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+				</div>
+				<div class="mix pink">
+					<img src="https://images.pexels.com/photos/2433467/pexels-photo-2433467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+				</div>
+				<div class="mix pink">
+					<img src="https://images.pexels.com/photos/1507609/pexels-photo-1507609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+				</div>
+				<div class="mix pink">
+					<img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+				</div>
+				<div class="mix pink">
+					<img src="https://images.pexels.com/photos/11143927/pexels-photo-11143927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+				</div>
+				<div class="mix pink">
+					<img src="https://images.pexels.com/photos/2433467/pexels-photo-2433467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+				</div>
+				<div class="mix pink">
+					<img src="https://images.pexels.com/photos/1507609/pexels-photo-1507609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+				</div>
+				<div class="mix pink">
+					<img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+				</div>
+				<div class="mix pink">
+					<img src="https://images.pexels.com/photos/11143927/pexels-photo-11143927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+
+	<script type='text/javascript' src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+	<script type="text/javascript" src="mix-it-up/mixitup.min.js"></script>
+	<script type="text/javascript" src="mix-it-up/masonry.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+
+			var mixitupEl = document.querySelector('.mixitup');
+			var mixer = mixitup(mixitupEl, {
+				animation: {
+					// enable: false
+					animateResizeContainer: true,
+				}
+			});
+
+			var masonryOptions = {
+			  columnWidth: 1,
+			  itemSelector: '.mix'
+			};
+
+			jQuery('.mixitup').masonry(masonryOptions);
+
+			jQuery( document.body ).on( 'mixStart', function(event){
+		        jQuery('.mixitup').masonry('destroy');
+
+		        var dataFilter = jQuery('button.mixitup-control-active').attr('data-filter');
+
+		        console.dir( dataFilter.substring(1) );
+		    });
+
+			jQuery( document.body ).on( 'mixEnd', function(event){
+				jQuery('.mixitup').masonry(masonryOptions);
+		    });
+		});
+	</script>
+</body>
+</html>
