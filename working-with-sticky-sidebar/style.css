@@ -1,0 +1,17 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+div#Content{
+	border:1px solid #aaa;
+}
+div.inner-wrapper-sticky{
+	border:1px solid #aaa;
+	padding: 0px 15px;
+}
+
+footer.jumbotron {
+    margin-bottom: 0;
+    margin-top: 35px;
+}
