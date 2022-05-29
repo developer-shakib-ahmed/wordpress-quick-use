@@ -525,6 +525,13 @@ if(function_exists('wp_pagenavi')){
 ?>
 
 
+<?php if ( is_active_sidebar( 'left-sidebar' ) ) : ?>
+  <ul id="sidebar">
+    <?php dynamic_sidebar( 'left-sidebar' ); ?>
+  </ul>
+<?php endif; ?>
+
+
 <?php wp_footer(); ?>	
 </body>
 </html>
