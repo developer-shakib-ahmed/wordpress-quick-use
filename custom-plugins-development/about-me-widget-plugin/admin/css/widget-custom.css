@@ -1,0 +1,202 @@
+a#image_reset {
+    color: #ef521d;
+    border-color: #ccc;
+}
+div#btn_area {
+    overflow: hidden;
+}
+div#btn_area div.left {
+    width: 50%;
+    float: left;
+}
+div#btn_area div.right {
+    width: 50%;
+    overflow: hidden;
+    padding-right: 6px;
+    float: right;
+    box-sizing: border-box;
+}
+
+
+div.display_image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #e5e5e5;
+    padding: 5px;
+}
+div.display_image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+.onoffswitch {
+    position: relative;
+    width: 60px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    margin-right: 60px;
+    float: right;
+    overflow: visible !important;
+}
+.onoffswitch-checkbox {
+    display: none !important;
+}
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #E3E3E3;
+    border-radius: 3px;
+    width: 120px;
+    padding: 2px;
+}
+.onoffswitch-label:hover{
+    border: 1px solid #ccc;
+}
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 24px;
+    padding: 0;
+    line-height: 25px;
+    font-size: 13px;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Image Hide";
+    padding-left: 9px;
+    background-color: #e6e6e6;
+    color: #333;
+    /*box-shadow: inset 0 3px 5px rgba(0,0,0,.125);*/
+}
+.onoffswitch-inner:after {
+    content: "Image Show";
+    padding-right: 7px;
+    background-color: #e6e6e6;
+    color: #666666;
+    text-align: right;
+    /*box-shadow: inset 0 3px 5px rgba(0,0,0,.125);*/
+}
+.onoffswitch-switch {
+    display: block;
+    width: 36px;
+    margin: 0px;
+    background: #27A1CA;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    border: 2px solid #E3E3E3;
+    border-radius: 5px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: -66px; 
+    background-color: #A1A1A1;
+    /*background-color: #27A1CA;*/
+}
+
+
+
+
+div.about_me_social_icon {
+    margin-top: 25px;
+}
+div.about_me_social_icon h4{
+
+}
+div.about_me_social_icon label{
+    margin-bottom: 2px;
+    display: inline-block;
+}
+div.about_me_social_icon i.fa{
+    color: #000;
+    font-size: 16px;
+    margin-right: 3px;
+}
+div.about_me_social_icon i.fa-facebook-square {
+    color:#4867AA;
+}
+div.about_me_social_icon i.fa-twitter-square {
+    color:#1DA1F2;
+}
+div.about_me_social_icon i.fa-google-plus-square {
+    color:#d34836;
+}
+div.about_me_social_icon i.fa-youtube-square {
+    color:#bb0000;
+}
+div.about_me_social_icon i.fa-envelope {
+    color:#FFA930;
+}
+div.about_me_social_icon i.fa-skype {
+    color:#00AFF0;
+}
+div.about_me_social_icon i.fa-phone-square {
+    color:#000000;
+}
+div.about_me_social_icon i.fa-linkedin-square {
+    color:#0177B5;
+}
+div.about_me_social_icon i.fa-xing-square {
+    color:#006567;
+}
+div.about_me_social_icon i.fa-foursquare {
+    color:#FB4776;
+}
+div.about_me_social_icon i.fa-vimeo-square {
+    color:#00B3EC;
+}
+div.about_me_social_icon i.fa-instagram {
+    color:#cd486b;
+}
+div.about_me_social_icon i.fa-pinterest-square {
+    color:#CD2129;
+}
+div.about_me_social_icon i.fa-dribbble {
+    color:#C32361;
+}
+div.about_me_social_icon i.fa-flickr {
+    color:#0063DC;
+}
+div.about_me_social_icon i.fa-github-square {
+    color:#6CC644;
+}
+div.about_me_social_icon i.fa-behance-square {
+    color:#1769FF;
+}
+div.about_me_social_icon i.fa-tumblr-square {
+    color:#35465C;
+}
+div.about_me_social_icon i.fa-whatsapp {
+    color:#25D366;
+}
+div.about_me_social_icon i.fa-soundcloud {
+    color:#FF8800;
+}
+div.about_me_social_icon i.fa-rss-square {
+    color:#F26522;
+}
+
+div.custom_icons {
+    display: none;
+    padding-bottom: 15px;
+}

@@ -1,0 +1,8 @@
+a#image_reset {
+    color: #ef521d;
+    border-color: #ccc;
+}
+a#image_reset:hover {
+    border-color: red;
+    box-shadow: 0px 0px 1px #ef521d;
+}

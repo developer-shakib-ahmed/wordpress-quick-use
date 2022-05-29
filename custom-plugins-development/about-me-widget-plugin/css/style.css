@@ -1,0 +1,86 @@
+img.about_me {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+div.about_me_social_icon {
+    margin: 10px 0px;
+}
+div.about_me_social_icon ul {
+    text-align: center;
+}
+div.about_me_social_icon ul li {
+    display: inline;
+    margin: 0px 5px;
+    font-size: 25px;
+    line-height: 1.3;
+}
+div.about_me_social_icon ul li a {
+    display: inline-block;
+    line-height: 1.3;
+    font-size: 25px;
+}
+div.about_me_social_icon i.fa-facebook-square {
+    color:#4867AA;
+}
+div.about_me_social_icon i.fa-twitter-square {
+    color:#1DA1F2;
+}
+div.about_me_social_icon i.fa-google-plus-square {
+    color:#d34836;
+}
+div.about_me_social_icon i.fa-youtube-square {
+    color:#bb0000;
+}
+div.about_me_social_icon i.fa-envelope {
+    color:#FFA930;
+}
+div.about_me_social_icon i.fa-skype {
+    color:#00AFF0;
+}
+div.about_me_social_icon i.fa-phone-square {
+    color:#000000;
+}
+div.about_me_social_icon i.fa-linkedin-square {
+    color:#0177B5;
+}
+div.about_me_social_icon i.fa-xing-square {
+    color:#006567;
+}
+div.about_me_social_icon i.fa-foursquare {
+    color:#FB4776;
+}
+div.about_me_social_icon i.fa-vimeo-square {
+    color:#00B3EC;
+}
+div.about_me_social_icon i.fa-instagram {
+    color:#cd486b;
+}
+div.about_me_social_icon i.fa-pinterest-square {
+    color:#CD2129;
+}
+div.about_me_social_icon i.fa-dribbble {
+    color:#C32361;
+}
+div.about_me_social_icon i.fa-flickr {
+    color:#0063DC;
+}
+div.about_me_social_icon i.fa-github-square {
+    color:#6CC644;
+}
+div.about_me_social_icon i.fa-behance-square {
+    color:#1769FF;
+}
+div.about_me_social_icon i.fa-tumblr-square {
+    color:#35465C;
+}
+div.about_me_social_icon i.fa-whatsapp {
+    color:#25D366;
+}
+div.about_me_social_icon i.fa-soundcloud {
+    color:#FF8800;
+}
+div.about_me_social_icon i.fa-rss-square {
+    color:#F26522;
+}

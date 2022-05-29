@@ -1,0 +1,287 @@
+/*
+    This style set effects on admin panel.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*===== Stat @font-face Style Here =====*/
+@font-face {
+    font-family: 'SolaimanLipi';
+    src: url(../fonts/SolaimanLipi.ttf);
+    font-weight: 400;
+    font-style: normal
+}
+/*===== Stat @font-face Style Here =====*/
+
+/*===== Stat Dashboard Style Here =====*/
+html.wp-toolbar {
+    /*padding-top: 0 !important;*/
+}
+div#wpwrap div#wpcontent div#wpadminbar {
+    /*display: none !important;*/
+}
+div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex: 1 1 100% !important;
+}
+div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu li {
+    order: 2 !important;
+    width: 100% !important;
+}
+div#wpadminbar li#wp-admin-bar-site-name div.ab-sub-wrapper,
+div#wpadminbar ul#wp-admin-bar-top-secondary {
+    display: none !important;
+}
+
+
+
+/*----- customCode -----*/
+div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu div#customCode {
+    order: 1 !important;
+    width: 100% !important;
+    color: #eee !important;
+    text-align: center !important;
+    margin: 10px 0px !important;
+    padding: 0px 10px !important;
+    box-sizing: border-box !important;
+}
+div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu div#customCode * {
+    color: #eee !important;
+}
+div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu div#customCode div.userAvater img.avatar {
+    border-radius: 50% !important;
+    border: 3px solid #eee !important;
+}
+div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu div#customCode h2.userName {
+    color: #fbfbfb !important;
+    font-family: 'SolaimanLipi', sans-serif !important;
+    font-weight: normal !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu div#customCode p.userPower {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    text-transform: capitalize !important;
+    display: none !important;
+}
+
+/*----- admin menu logout -----*/
+div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu li div.dashicons-logout,
+div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu li div.dashicons-dashboard{
+    position: relative;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu li div.dashicons-logout:before,
+div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu li div.dashicons-dashboard:before{
+    content: "\f08b";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+    padding: 10px 0;
+}
+div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu li div.dashicons-dashboard:before {
+    content: "\f05d" !important;
+    padding: 7px 0;
+    /* color: #00a63f; */
+}
+div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu li#toplevel_page_logout div.wp-menu-name {
+    padding: 0 !important;
+}
+div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu li#toplevel_page_logout div.wp-menu-name a.link {
+    padding:10px 5px !important;
+}
+div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu li#toplevel_page_logout div.wp-menu-name a.toplevel_page_logout {
+    display: none;
+}
+div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu li#toplevel_page_logout a.toplevel_page_logout {
+    height: auto;
+    padding: 0;
+}
+
+div#wpwrap div#wpcontent div#wpadminbar span.display-name {
+    text-transform: capitalize !important;
+}
+body.folded div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu div#customCode div.userAvater img.avatar {
+    border: 0px solid #eee;
+    width: 26px;
+    height: 26px;
+    box-shadow: 0px 0px 0px 1px #eee;
+}
+body.folded div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu div#customCode h2.userName {
+    display: none !important;
+}
+body.folded div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu div#customCode{
+    padding: 0 !important;
+}
+/*===== End Dashboard Style Here =====*/
+
+
+
+
+
+/*===== Stat Login Style Here =====*/
+body.sm-cms-login form#loginform,
+body.sm-cms-login #login_error,
+body.sm-cms-login .message {
+    background: rgba(255, 255, 255, 0.85) !important;
+}
+body.sm-cms-login form#loginform{
+    border-radius: 3px !important;
+}
+body.sm-cms-login form .input,
+body.sm-cms-login form input[type=checkbox],
+body.sm-cms-login input[type=text] {
+    background: transparent;
+}
+body.sm-cms-login div#login form .input {
+    border: 2px solid #b4b9be !important;
+    border-radius: 5px !important;
+    padding: 10px 12px !important;
+}
+body.sm-cms-login div#login form .input:focus,
+body.sm-cms-login form input[type=checkbox]:focus{
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 178, 45, 0.8) !important;
+    box-shadow: 0px 0px 0px 1px rgba(0, 178, 45, 0.8) !important;
+}
+body.sm-cms-login p#nav, body.sm-cms-login p#backtoblog {
+    text-align: center !important;
+}
+body.sm-cms-login p#nav a, body.sm-cms-login p#backtoblog a {
+    outline: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    font-family: 'SolaimanLipi', sans-serif !important;
+    font-weight: normal !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    color: #eee;
+}
+body.login div#login h1 a {
+    background-image: url(../img/sm-transpren-white.png) !important;
+    width: 100% !important;
+    background-size: contain !important;
+}
+body.sm-cms-login {
+    background-image: url(../img/login-bg.jpg) !important;
+    width: 100%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+body.sm-cms-login form label {
+    color: #555 !important;
+    font-size: 16px !important;
+}
+body.sm-cms-login form p.forgetmenot label {
+    font-size: 14px !important;
+}
+body.sm-cms-login form input[type=checkbox] {
+    border: 2px solid #b4b9be !important;
+    width: 20px !important;
+    height: 19px !important;
+    border-radius: 2px !important;
+}
+body.sm-cms-login form#loginform p.forgetmenot {
+    width: 100% !important;
+    margin-bottom: 25px !important;
+}
+body.sm-cms-login form#loginform p.submit {
+    width: 100% !important;
+    text-align: center !important;
+}
+body.sm-cms-login form#loginform p.submit:after {
+    content: none !important;
+}
+body.sm-cms-login form#loginform p.submit input#wp-submit {
+    width: 100% !important;
+    background-color: #00b22d !important;
+    padding: 10px 24px !important;
+    box-sizing: border-box !important;
+    font-family: 'SolaimanLipi', sans-serif;
+    font-weight: normal !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+}
+body.sm-cms-login form#loginform p.submit input#wp-submit:hover,
+body.sm-cms-login form#loginform p.submit input#wp-submit:focus{
+   background-color: rgba(0, 178, 45, 0.85) !important;
+}
+body.sm-cms-login form#loginform label {
+    font-family: 'SolaimanLipi', sans-serif !important;
+    font-weight: normal !important;
+    font-size: 20px !important;
+}
+body.sm-cms-login div#login h1:before {
+    text-align: center !important;
+}
+body.sm-cms-login div#login div#login_error {
+    top: 0;
+    margin-bottom: 0;
+    padding: 25px 50px;
+    background-color: #fff !important;
+}
+/*===== End Login Style Here =====*/
+
+
+
+/*===== Start Responsive Style Here =====*/
+@media only screen and (max-width: 960px) {
+    body.auto-fold div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu div#customCode{
+        padding: 0 !important;
+        margin-top: 0 !important;
+    }
+    body.auto-fold div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu div#customCode h2.userName{
+        display: none !important;
+    }
+    body.auto-fold div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu div#customCode div.userAvater img.avatar {
+        border: 0px solid #eee;
+        width: 26px;
+        height: 26px;
+        box-shadow: 0px 0px 0px 1px #eee;
+    }
+}
+@media only screen and (max-width: 782px) {
+    body.auto-fold div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu div#customCode div.userAvater img.avatar {
+        border: 3px solid #eee;
+        width: 70px;
+        height: 70px;
+    }
+    body.auto-fold div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu div#customCode h2.userName{
+        display: block !important;
+    }
+    body.auto-fold div#wpwrap div#adminmenumain div#adminmenuwrap ul#adminmenu div#customCode{
+        padding: 10px !important;
+        margin-top: 10px !important;
+    }
+    div#wpwrap div#wpcontent div#wpadminbar {
+        display: block !important;
+    }
+    html.wp-toolbar {
+        padding-top: 46px !important;
+    }
+    div#wpadminbar ul#wp-admin-bar-top-secondary {
+        display: block !important;
+    }
+}
+@media only screen and (max-width: 600px) {
+    html.wp-toolbar {
+        padding-top: 0px !important;
+    }
+}
+/*===== End Responsive Style Here =====*/
+
