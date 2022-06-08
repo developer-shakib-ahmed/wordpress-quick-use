@@ -1,0 +1,33 @@
+
+div.skillbar {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #444;
+    overflow: hidden;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+span.title {
+    color: #fff;
+    float: left;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+}
+span.progress {
+    position: absolute;
+    width: 12%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #fb7700;
+    z-index: 1;
+}
+span.percent {
+    color: #fff;
+    float: right;
+    position: relative;
+    z-index: 2;
+}

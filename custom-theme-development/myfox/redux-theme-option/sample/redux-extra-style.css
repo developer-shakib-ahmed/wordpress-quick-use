@@ -1,0 +1,8 @@
+/*
+	This is the stylesheet
+*/
+
+
+div.redux-main{}
+div.redux-main div.redux-group-tab{}
+div.redux-main div.redux-group-tab h2{border-bottom:1px solid #ccc;padding-bottom:5px;margin-bottom:10px;}

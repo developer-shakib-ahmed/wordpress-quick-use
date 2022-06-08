@@ -1,0 +1,255 @@
+/*
+**************************************************
+*small Mobile
+**************************************************
+*/
+/* This CSS for small Mobile*/
+@media (max-width: 767px) {
+    .mainmenu_area{height:0px;}
+    .logo {position:fixed;margin-top:6px;margin-left:12px;z-index:999999;}
+    .logostick {position:fixed;margin-top:6px;margin-left:12px;z-index:999999;}
+    .solid_background h2{  font-size:1.5em;text-align: center;} 
+    .solid_background .learn_btn a{padding: 6px 14px;font-size:13px;}
+    .solid_background .learn_btn{text-align: center;float: none;}
+    .demo_area .single_demo{width:48%;}
+    .demo_area .single_demo .single_img{  margin-left:15px;}
+    .demo_area .load_quick_btn a.one{margin-right:8px;padding: 5px 8px;}
+    .demo_area .load_quick_btn a.two{padding: 6px 8px;}  
+    .support_area .support_text{text-align: center;margin-bottom: 30px;}  
+    .support_area .support_text .span{margin:auto;}
+    .support_area .support_img img{display: block;margin:auto;}
+    .mobile_area .mobile_text_l{text-align: center;}
+    .mobile_area .mobile_text_l p{text-align: center;}
+    .mobile_area .mobile_text_r{text-align: center;}
+    .mobile_area .mobile_text_r p{text-align: center;}
+    .mobile_area #padding{padding-right:15px;padding-left:15px;}
+    .mobile_area #padding2{padding-right:15px;padding-left:15px;}
+    .mobile_area .mobile_text_l h3 span i.fa {padding: 6px 8px 6px 8px;width: 30px;margin-left: 3px;} 
+    .mobile_area .mobile_text_r h3 span i.fa{padding: 6px 8px 6px 8px;width:30px;margin-right:3px;}
+    .mobile_area img{width:250px;height:400px;display: block;margin:0 auto 30px;} 
+    .mobile_area #mobile_l{padding-left: 0;padding-right: 0;}
+    .mobile_area #mobile_r{padding-left: 0;padding-right: 0;}
+    .buy_area .buy_text h1{  font-size: 35px;margin-bottom: 10px;}
+    .buy_area .buy_text a.a_one{margin-top:15px;  padding: 5px 15px;}
+    .buy_area .buy_text a.a_two{margin-left:10px;margin-top:15px;  padding: 4px 15px;}
+    .install_area .install_text {text-align: center;margin-bottom: 20px;}
+    .install_area .install_text .span{margin:auto;}
+    .admin_area .admin_txt h1{  font-size: 35px;margin-bottom: 10px;}
+    .admin_area .admin_txt a.a_one{margin-top:15px;  padding: 5px 15px;}
+    .admin_area .admin_txt a.a_two{margin-left:0px;margin-top:15px;padding: 4px 15px;}
+    .buyfox_area .buyfox_txt h1{font-size: 35px;margin-bottom: 10px;}
+    .shortcode_area .code_btn{margin-left: 0;}
+    .shortcode_area .code_btn .a_one{margin-right:0;margin-top:20px;display:block;width:223px;margin: auto;}
+    .shortcode_area .code_btn .a_two{margin-top: 20px;}
+    .single_support{width:100%;padding: 50px 45px;}
+    .shortcode_area h1{  font-size: 36px;line-height:55px;}
+    .install_area .install_text .spans,.support_area .support_text .spans{margin:auto;}
+    .buyfox_area .buyfox_txt a.a_one,.buyfox_area .buyfox_txt a.a_two{  padding: 5px 9px;}
+    .buyfox_area .buyfox_txt a.a_two{margin-top: 10px;margin-left: 10px;}
+    .buyfox_area .buyfox_txt a img{display: block;margin:auto;margin-top: 226px;}
+    .footer_btm_area p{text-align: center;}
+    .footer_btm_area ul {text-align: inherit;}
+
+    .contact_us_left{padding: 5px 25px 25px 25px;}
+    .contact_us_left h2{text-align: center;}    
+
+
+    
+
+/*This is slicknav css.*/
+    .mainmenu_box{display: none;}
+    .slicknav_menu{display:block;position:fixed;width: 100%;top: 60px;right: 0px;z-index: 99999;padding: 0px;
+        background: transparent;}
+    .slicknav_menu .slicknav_menutxt {text-indent: -9999px; }
+    .slicknav_btn { padding: 0.438em 0.6em 0.35em 0.22em;margin:13px 0px 13px;background-color: #2E3244;right:60px;position: fixed!important;z-index: 999999!important;margin-top:-47px;} 
+    .slicknav_nav {background-color: #2E3244;}
+
+    .stick> .mainmenu> .search_box> ul> li> a {color: #fff;}
+    .mainmenu> .search_box> ul> li> a:hover{color:#fff;}
+    .mainmenu> .search_box> ul> li> a{
+        color:#fff;
+        background: #2E3244;
+        padding: 4px 13px 6px 13px;
+        border-radius: 4px;
+        margin-top: 13px;
+        margin-right: 10px;
+        position: fixed;
+        z-index: 999999;
+        top: 0;
+        right: 0;       
+    }
+    .stick .mainmenu .search_box ul li .show_search_box{top:60px;}
+    .mainmenu .search_box ul li .show_search_box{top: 60px;}     
+/*This is slicknav css.*/
+}
+
+
+/*
+**************************************************
+*Tablet
+**************************************************
+*/
+/* This CSS for Tablet */
+@media (min-width: 768px) {
+    .mainmenu_area{height:0px;}
+    .logo {position:fixed;margin-top:6px;margin-left:12px;z-index:999999;}
+    .logostick {position:fixed;margin-top:6px;margin-left:12px;z-index:999999;}
+    .solid_background h2{  font-size: 18px;}
+    .solid_background .learn_btn a{padding: 6px 14px;font-size: 13px;}
+    .demo_area .single_demo{width: 24%;}
+    .demo_area .single_demo .single_img{  margin-left: 45px;}
+    .demo_area .load_quick_btn a.one{margin-right: 20px;padding: 10px 30px;}
+    .demo_area .load_quick_btn a.two{padding: 12px 30px;}    
+    .mobile_area #padding{padding-right:15px;padding-left:15px;}
+    .mobile_area #padding2{padding-right:15px;padding-left:15px;float: right;}
+    .mobile_area img{width:100%;height:590px;}
+    .mobile_area .mobile_text_l{text-align:right;margin-top:90px;}
+    .mobile_area .mobile_text_l h3 span i.fa {padding: 6px 8px 6px 8px;width: 30px;margin-left: 3px;} 
+    .mobile_area .mobile_text_r{  margin-top:-515px;text-align: left;} 
+    .mobile_area .mobile_text_r h3 span i.fa{padding: 6px 8px 6px 8px;width:30px;margin-right:3px;}     
+    .mobile_area #mobile_r{float: none;}
+    .shortcode_area .single_codes img{width: 275px;}
+    .support_foram_area .single_support{min-height:576.75px;width:33.333%;padding:50px 45px;float:left;}
+    .buyfox_area .buyfox_txt a img{display: block;margin:auto;margin-top: 74px;}
+    .footer_btm_area p{text-align: center;}
+    .footer_btm_area ul {text-align: inherit;}
+
+    .contact_us_left{padding: 5px 25px 25px 25px;}
+
+
+
+  
+/*This is slicknav css.*/  
+    .mainmenu_box{display: none;}
+    .slicknav_btn{margin:13px 0px 13px;background-color: #2E3244;right:60px;position: fixed!important;z-index: 999999!important;margin-top: -47px;}
+    .slicknav_menu{display:block;position:fixed;width: 100%;top: 60px;right: 0px;z-index: 99999;padding: 0px;
+        background: transparent;}  
+    .slicknav_nav {background-color: #2E3244;}
+
+    .stick> .mainmenu> .search_box> ul> li> a {color: #fff;}
+    .mainmenu> .search_box> ul> li> a:hover{color:#fff;}
+    .mainmenu> .search_box> ul> li> a{
+        color:#fff;
+        background: #2E3244;
+        padding:5px 13px 6px 13px;
+        border-radius: 3px;
+        margin-top: 13px;
+        margin-right: 10px;
+        position: fixed;
+        z-index: 999999;
+        top: 0;
+        right: 0;       
+    }
+    .stick .mainmenu .search_box ul li .show_search_box{top:60px;}
+    .mainmenu .search_box ul li .show_search_box{top: 60px;}     
+/*This is slicknav css.*/
+}
+
+/*
+**************************************************
+*Medium Devices
+**************************************************
+*/
+/* This CSS for Medium Devices */
+@media (min-width: 992px) {  
+    .mainmenu_area{height: 99px;}
+    .mainmenu{margin-right:4%;}
+    .logo {position:absolute;margin-top: 25px;margin-left:4%;z-index:999999;}
+    .logostick {position:absolute;margin-top: 25px;margin-left:4%;z-index:999999;}
+    .mainmenu> #nav> li> a{padding: 38px 4px;}  
+    .solid_background h2{  font-size:1.5em;} 
+    .solid_background .learn_btn a{padding: 10px 36px;font-size: 14px;}
+    .demo_area .single_demo{width: 24%;}
+    .demo_area .single_demo .single_img{  margin-left: 45px;}
+    .demo_area .load_quick_btn a.one{margin-right: 20px;padding: 10px 30px;}
+    .demo_area .load_quick_btn a.two{padding: 12px 30px;} 
+    .mobile_area #padding{padding-right:0px;padding-left:0px;} 
+    .mobile_area #padding2{padding-right:0px;padding-left:0px;} 
+    .mobile_area img{width:220px;height: 610px;}
+    .mobile_area .mobile_text_l{text-align:right;margin-top:25px;}
+    .mobile_area .mobile_text_l h3 span i.fa {padding: 6px 8px 6px 8px;width: 30px;margin-left: 3px;} 
+    .mobile_area .mobile_text_r{  margin-top:25px;text-align: left;} 
+    .mobile_area .mobile_text_r h3 span i.fa{padding: 6px 8px 6px 8px;width:30px;margin-right:3px;}   
+    .mobile_area #mobile_r{float:left;} 
+    .buy_area .buy_text{padding: 200px 0px;}
+    .support_foram_area .single_support{min-height:480.75px;width:33.333%;padding:50px 45px;float: left;}
+    .buyfox_area .buyfox_txt a img{display: block;margin:auto;margin-top: 150px;}
+    .footer_btm_area p{text-align: left;}
+    .footer_btm_area ul {text-align: right;}
+
+    .contact_us_left{padding: 5px 25px 25px 25px;}
+
+
+
+
+/*This is slicknav css.*/  
+    .mainmenu_box{display: block;}
+    .slicknav_menu{display:none;}
+    .stick> .mainmenu> .search_box> ul> li> a{color: #678;}
+    .mainmenu> .search_box> ul> li> a:hover{color:#27B899;}
+    .mainmenu> .search_box> ul> li> a{padding: 38px 10px;background: transparent;font-size: 13px;margin-top:0px;position: inherit;color: #fff;}
+    .stick .mainmenu .search_box ul li .show_search_box{top:60px;}
+    .mainmenu .search_box ul li .show_search_box{top: 99px;}     
+/*This is slicknav css.*/
+}
+
+/*
+**************************************************
+*Large Devices
+**************************************************
+*/
+/* This CSS for Large Devices */
+@media (min-width: 1200px) {
+    .mainmenu_area {height: 99px;}
+    .logo {position:absolute;margin-top: 25px;margin-left:6.747%;z-index:999999;}
+    .logostick {position:absolute;margin-top: 25px;margin-left:6.747%;z-index:999999;}
+    .mainmenu{margin-right:6.747%;}
+    .mainmenu> #nav> li> a{padding: 38px 10px;}
+    .solid_background h2{font-size: 1.5em;}
+    .solid_background .learn_btn a{padding: 10px 36px;font-size: 14px;}
+    .demo_area .single_demo{width: 24%;}
+    .demo_area .single_demo .single_img{  margin-left: 45px;}
+    .demo_area .load_quick_btn a.one{margin-right: 20px;padding: 10px 30px;}
+    .demo_area .load_quick_btn a.two{padding: 12px 30px;}
+    .mobile_area img{width:270px;height:600px;}
+    .mobile_area #padding{padding-right:15px;padding-left:15px;}
+    .mobile_area #padding2{padding-right:15px;padding-left:15px;}
+    .mobile_area .mobile_text_l{text-align:right;margin-top:60px;}
+    .mobile_area .mobile_text_l h3 span i.fa{padding: 10px 12px 10px 10px;width: 38px;margin-left: 10px;}
+    .mobile_area .mobile_text_r{  margin-top:60px;text-align: left;}
+    .mobile_area .mobile_text_r h3 span i.fa{padding:10px 10px 10px 12px;width:38px;margin-right:10px;}
+    .mobile_area #mobile_r{float:left;} 
+    .shortcode_area .single_codes img{height:450px;width:310px;}
+    .support_foram_area .single_support{padding:50px 45px;min-height:368px;width:33.333%;float:left;}
+    .buyfox_area .buyfox_txt a img{display: block;margin:auto;margin-top: 150px;}
+    .footer_btm_area p{text-align: left;}
+    .footer_btm_area ul {text-align: right;}
+
+    .contact_us_left{padding: 5px 25px 25px 25px;}    
+
+
+
+
+
+    
+      
+
+  
+/*This is slicknav css.*/
+    .mainmenu{display: block;}
+    .slicknav_menu{display:none;}\
+    .stick> .mainmenu> .search_box> ul> li> a{color: #678;}
+    .mainmenu> .search_box> ul> li> a:hover{color:#27B899;}
+    .mainmenu> .search_box> ul> li> a{
+        padding: 38px 10px;
+        background: transparent;
+        font-size: 13px;
+        margin-top:0px;
+        position: inherit;
+        color: #fff;
+        margin-right: 0;
+    }
+    .stick .mainmenu .search_box ul li .show_search_box{top:60px;}
+    .mainmenu .search_box ul li .show_search_box{top: 99px;}    
+/*This is slicknav css.*/
+}

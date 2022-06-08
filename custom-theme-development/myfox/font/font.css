@@ -1,0 +1,55 @@
+/*----------Lato all fonts CSS-----Edits by Rahul from www.UniqueSoftBD.com----------*/
+
+@font-face {
+	font-family: "lato-regular";
+	src: url("lato-regular/lato-regular.eot");
+	src: url("lato-regular/lato-regular.eot#iefix") format("embedded-opentype"),
+	url("lato-regular/lato-regular.woff") format("woff"),
+	url("lato-regular/lato-regular.ttf") format("truetype"),
+	url("lato-regular/lato-regular.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: "lato-black";
+	src: url("lato_black/lato-black.eot");
+	src: url("lato_black/lato-black.eot#iefix") format("embedded-opentype"),
+	url("lato_black/lato-black.woff") format("woff"),
+	url("lato_black/lato-black.ttf") format("truetype"),
+	url("lato_black/lato-black.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: "lato-bold";
+	src: url("lato-bold/lato-bold.eot");
+	src: url("lato-bold/lato-bold.eot#iefix") format("embedded-opentype"),
+	url("lato-bold/lato-bold.woff") format("woff"),
+	url("lato-bold/lato-bold.ttf") format("truetype"),
+	url("lato-bold/lato-bold.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: "lato-light";
+	src: url("lato-light/lato-light.eot");
+	src: url("lato-light/lato-light.eot#iefix") format("embedded-opentype"),
+	url("lato-light/lato-light.woff") format("woff"),
+	url("lato-light/lato-light.ttf") format("truetype"),
+	url("lato-light/lato-light.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+/*-----------------------------------End all CSS-------------------------------------*/

@@ -1,0 +1,684 @@
+@media only screen and (max-width:400px) {
+	
+	h3{
+		font-size: 20px;
+		margin-bottom:15px;
+	}
+	.sm-black, .sm-white{
+		font-size:14px ! important;
+		line-height:20px ! important;
+	}
+	.pad-sm{
+		padding:20px 0px 0px !important;
+	}
+	.mmmm{
+		margin-top:18px;
+	}
+/*======================================================================
+					Global declaration
+=======================================================================*/	
+	li.my-logo{
+		display:block !important;
+	}
+	ul.ul-left{
+		display:none;
+	}
+	div#mobilemenu{
+		padding-right:0px;
+		width:100% !important;
+		margin-left:0px;
+	}
+	div#mobilemenu a{
+		display:block !important;
+	}
+	div#mobilemenu li{
+		width:100%;
+	}
+/*======================================================================
+					header end
+=======================================================================*/
+	section.slider div.item h2{
+		font-size:13px;
+	}
+	section.slider div.item h4{
+		font-size:12px;
+		margin:0px;
+	}
+	section.slider div.item a{
+		padding: 7px 10px;
+		font-size: 10px;
+		margin-top: 5px;
+		margin-bottom:10px;
+	}
+	section.slider div.heading1, div.heading2, div.heading3{
+		top:-10px;
+	}
+/*======================================================================
+					slider end
+=======================================================================*/
+	
+	section#about-us{}
+	
+	section#about-us div.my-content{
+		padding:15px !important;
+	}
+	section#about-us h4.black{
+		margin-left:15px;
+	}
+	section#about-us img{
+		width:100% !important;
+		margin-bottom:15px;
+	}
+	div.block{
+		margin-top:20px ! important;
+	}
+	section#about-us p.head{
+		font-size:14px !important;
+		line-height:20px !important;
+	}
+/*======================================================================
+					about area end
+=======================================================================*/
+
+	section#services{}
+	
+	section#services i.fa{
+		font-size: 40px;
+		height: 100px;
+		line-height: 100px;
+		width: 100px;
+	}
+	section#services div.para{
+		margin-bottom:15px;
+	}
+	
+/*======================================================================
+					service area end
+=======================================================================*/
+
+section#team{}
+/*=====================================================================
+				team area end
+  =====================================================================*/
+	section#portfolio{
+		background:#fff;
+	}
+	
+	div.overlay p{
+		font-size:30px ! important;
+		margin-bottom:20px;
+		margin-top:10px;
+	}
+	div.overlay i.fa{
+		height: 35px ! important;
+		width: 35px ! important;
+		line-height: 35px ! important;
+		font-size: 16px ! important;
+	}
+	div.popUp{
+		width:70% !important;
+	}
+/*=====================================================================
+				portfolio area end
+  =====================================================================*/
+	section#clients img.client{
+		width:100%;
+		border:0;
+		padding:15px;
+	}
+	div#clients-carousel .carousel-indicators{
+	top:80%;
+	}
+	section#clients a{
+		margin-bottom:10px;
+	}
+
+
+/*=====================================================================
+				Clients area end
+  =====================================================================*/
+	
+	section#blog{
+		text-align:center;
+	}
+	h4.blog{
+		font-size:18px;
+	}
+	section#blog span{
+		font-size:11px ! important;
+	}
+	section#blog i.fa{
+		font-size:11px;
+	}
+
+/*=====================================================================
+				blog area end
+=====================================================================*/	
+	section#contact div.inner-left{
+		padding:64px 0px;
+		margin-bottom:15px;
+	}
+	section#contact i.fa {
+    line-height: 45px;
+    font-size: 20px;
+    height: 45px;
+    width: 45px;
+	}
+	section#contact div.inner-right{
+		padding:50px 15px;
+	}
+	div.form-left, div.form-right{
+		width:100% !important;
+	}
+	div.form-group input{
+		width:100%;
+	}
+	.form-control{
+		border-radius:0;
+	}
+	button.send{
+		margin:20px auto 0px !important;
+	}
+/*=====================================================================
+				Contact area end
+  =====================================================================*/
+ 
+}
+@media only screen and (min-width:401px) and (max-width:767px) {
+	
+	h3{
+		font-size: 25px;
+		margin-bottom:15px;
+	}
+	.sm-black, .sm-white{
+		font-size:14px !important;
+		line-height:20px ! important;
+	}
+	.pad-sm{
+		padding:20px 0px 3px !important;
+	}
+	.mmmm{
+		margin-top:18px;
+	}
+/*=====================================================================
+				Global Declaration
+  =====================================================================*/
+	ul.ul-left{
+		display:none;
+	}
+	div#mobilemenu{
+		padding-right:0px;
+		width:100% !important;
+		margin-left:0px;
+	}
+	div#mobilemenu a{
+		display:block !important;
+	}
+	div#mobilemenu li{
+		width:100%;
+	}
+	li.my-logo{
+		display:block !important;
+	}
+/*=====================================================================
+				header area end
+  =====================================================================*/
+	section.slider div.item h2{
+		font-size:17px;
+	}
+	section.slider div.item h4{
+		font-size:14px;
+		margin:15px 0px;
+	}
+	section.slider div.item a{
+		padding: 7px 10px;
+		font-size: 10px;
+		margin-top: 5px;
+		margin-bottom:15px;
+	}
+	section.slider div.heading1, div.heading2, div.heading3{
+		top:-12px;
+	}
+/*=====================================================================
+				slider area end
+  =====================================================================*/
+	section#about-us{}
+	
+	section#about-us h4.black{
+		margin-left:15px;
+	}
+	
+/*=====================================================================
+				About us area end
+  =====================================================================*/
+	section#services i.fa{
+		font-size: 40px;
+		height: 100px;
+		line-height: 100px;
+		width: 100px;
+	}
+	section#services div.para{
+		margin-bottom:15px;
+	}
+	
+/*=====================================================================
+				Services area end
+  =====================================================================*/
+	
+	section#team{}
+	section#team div.single-member img.teamm{
+		width:100% !important;
+	}
+	
+/*=====================================================================
+				team area end
+=====================================================================*/	
+	section#portfolio{
+		background:#fff;
+	}
+	div.overlay p{
+		font-size:30px ! important;
+		margin-bottom:7px;
+		margin-top:20px;
+	}
+	div.overlay i.fa{
+		height: 35px ! important;
+		width: 35px ! important;
+		line-height: 35px ! important;
+		font-size: 16px ! important;
+	}
+	
+	div.popUp{
+		width:60% !important;
+	}
+/*=====================================================================
+				Portfolio area end
+=====================================================================*/	
+section#clients div.media-body p{
+	font-size:12px;
+	margin:5px 0px 0px 10px;
+}
+section#clients img.client{
+	width:40%;
+	padding-right:10px;
+}
+div.media-body small{
+	margin-left:10px;
+}
+section#clients a{
+	margin-top:0;
+	font-size:12px;
+	margin-left:10px;
+}
+/*=====================================================================
+				Clients area end
+=====================================================================*/	
+	
+	h4.blog{
+		font-size:22px;
+	}
+	section#blog{
+		text-align:center;
+	}
+	section#blog div.inner{
+		margin-bottom:30px;
+	}
+/*=====================================================================
+				blog area end
+=====================================================================*/
+	section#contact div.inner-left{
+		padding:64px 0px;
+		margin-bottom:15px;
+	}
+	section#contact i.fa{
+		line-height:50px;	
+		font-size:20px;
+		height: 50px;
+		width: 50px;
+	}
+	section#contact div.inner-right{
+		padding:50px 15px;
+	}
+	div.form-left, div.form-right{
+		width:100% !important;
+	}
+	div.form-group input{
+		width:100%;
+	}
+	button.send{
+		margin:20px auto 0px;
+	}
+/*=====================================================================
+				Contact area end
+=====================================================================*/
+
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+	h3{
+		font-size: 30px;
+		margin-bottom:18px;
+	}
+	.sm-black, .sm-white{
+		font-size:15px ! important;
+		line-height:20px ! important;
+	}
+/*=====================================================================
+				Global Declaration
+=====================================================================*/
+	ul.mmmm li a{
+		font-size: 11px !important;
+		padding: 7px 12px !important;
+		margin-top: 6px !important;
+	}
+/*=====================================================================
+				header area end
+=====================================================================*/
+	section.slider div.item h2{
+		font-size:29px;
+	}
+	section.slider div.item h4{
+		font-size:21px;
+		margin:30px 0px;
+	}
+	section.slider div.item a{
+		padding:10px 15px;
+		font-size:14px;
+		margin-top:10px;
+		margin-bottom:60px;
+	}
+	section.slider div.heading1, div.heading2, div.heading3{
+		top:50px;
+	}
+/*=====================================================================
+				Slider area end
+=====================================================================*/
+	section#about-us{}
+
+	div.skillbars h4.black{
+		margin-bottom:58px ! important;
+	}
+	div.my-content .sm-black{
+		font-size:13px ! important;
+		line-height:0px ! important;
+	}
+/*=====================================================================
+				About-us area end
+=====================================================================*/	
+	section#services{}
+	section#services i.fa{
+		font-size: 40px;
+		height: 100px;
+		line-height: 100px;
+		width: 100px;
+	}
+	section#services h5{
+		font-size:19px;
+	}
+	section#services div.para p.sm-white{
+		font-size:13px !important;
+	}
+/*=====================================================================
+				Services area end
+=====================================================================*/		section#team{}
+	div.team-para i.fa{
+		width:29px ! important;
+		height:29px ! important;
+		line-height:29px ! important;
+		font-size:14px ! important;
+	}	
+/*=====================================================================
+				team area end
+=====================================================================*/	
+	section#portfolio{}
+	div.popUp{
+		width:50% !important;
+	}
+/*=====================================================================
+				Portfolio area end
+=====================================================================*/	
+	section#clients img.client{
+		width:40%;
+		padding-right:15px;
+	}
+	section#clients div.media-body p{
+		font-size:13px;
+	}
+	/*===================================================
+				Clients area
+	=====================================================*/
+	
+	section#blog{
+		position:relative;
+	}
+	section#blog i.fa{
+		font-size:8px;
+	}
+	section#blog span{
+		font-size:8px;
+	}
+	h4.blog{
+		font-size:12px !important;
+		margin:20px 0px 0px !important;
+	}
+	section#blog a{
+		font-size:12px !important;
+	}
+/*=====================================================================
+				Blog area end
+=====================================================================*/
+	section#contact div.inner-left{
+		padding:59px 0px 100px;
+	}
+	section#contact i.fa{
+		line-height:50px;	
+		font-size:20px;
+		height: 50px;
+		width: 50px;
+	}
+	section#contact div.inner-right{
+		padding:28px 15px;
+	}
+	div.form-left, div.form-right{
+		width:100% !important;
+	}
+	div.form-group input{
+		width:100%;
+	}
+/*=====================================================================
+				Contact area end
+=====================================================================*/
+
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+	h3{
+		font-size: 35px;
+		margin-bottom: 30px;
+	}
+	.sm-black, .sm-white{
+		font-size:14px ! important;
+		line-height:20px ! important;
+	}
+/*=====================================================================
+				Global declaration
+=====================================================================*/	
+	header{}
+/*=====================================================================
+				hader area end
+=====================================================================*/		
+	section.slider div.item h2{
+		font-size:37px;
+	}
+	section.slider div.item h4{
+		font-size:25px;
+		margin:30px 0px;
+	}
+	section.slider div.item a{
+		padding:10px 15px;
+		font-size:14px;
+		margin-top:10px;
+		margin-bottom:90px;
+	}
+	section.slider div.heading1, div.heading2, div.heading3{
+		top:80px;
+	}
+	
+/*=====================================================================
+				Slider area end
+=====================================================================*/	
+	section#about-us{}
+	
+	div.skillbars h4.black{
+		margin-bottom:56px;
+	}
+/*=====================================================================
+				About area end
+=====================================================================*/
+	section#services i.fa{
+		font-size: 70px;
+		height: 140px;
+		line-height: 140px;
+		width: 140px;
+	}
+/*=====================================================================
+				Service area end
+=====================================================================*/	
+	section#team{}
+	
+/*=====================================================================
+				Team area end
+=====================================================================*/	
+	section#portfolio{}
+	
+	div.overlay p{
+		font-size:25px ! important;
+		margin-bottom:5px;
+	}
+	div.overlay i.fa{
+		height: 40px ! important;
+		width: 40px ! important;
+		line-height: 40px ! important;
+		font-size:18px ! important;
+	}
+	
+	div.popUp{
+		width:50% !important;
+	}
+/*=====================================================================
+				Portfolio area end
+=====================================================================*/
+	section#clients{}
+	div.right p.responsivep{
+		font-size:12px ! important;
+		margin-bottom:3px !important;
+	}
+
+/*=====================================================================
+				Clients area end
+=====================================================================*/	
+	
+	h4.blog{
+		font-size:18px;
+	}
+	section#blog span{
+		font-size:11px;
+	}
+	section#blog a{
+		font-size:12px !important;
+	}
+	section#contact div.inner-left{
+		padding:64px 0px 100px;
+	}
+
+/*=====================================================================
+				Blog area end
+=====================================================================*/
+	section#contact i.fa{
+		line-height:50px;	
+		font-size:20px;
+		height: 50px;
+		width: 50px;
+	}
+	section#contact div.inner-right{
+		padding:38px 15px;
+	}
+	div.form-left, div.form-right{
+		width:100% !important;
+	}
+	div.form-group input{
+		width:100%;
+	}
+
+/*=====================================================================
+				Contact area end
+=====================================================================*/
+
+}
+@media only screen and (min-width:1200px) {
+	section.slider div.item h2{
+		font-size:45px;
+	}
+	section.slider div.item h4{
+		font-size:25px;
+		margin:45px 0px;
+	}
+	section.slider div.item a{
+		padding:10px 15px;
+		font-size:14px;
+		margin-top:10px;
+		margin-bottom:140px;
+	}
+	section.slider div.heading1, div.heading2, div.heading3{
+		top:-150px;
+	}/*================ slider end =================*/
+	h3{
+		font-size: 35px;
+		margin-bottom: 30px;
+	}
+	.sm-black, .sm-white{
+		font-size:15px ! important;
+		line-height:23px! important;
+	}
+	/*===================================================
+				Clients area
+	=====================================================*/
+	div.right p.responsivep{
+		font-size:14px ! important;
+	}
+	section#services i.fa{
+		font-size: 80px;
+		height: 150px;
+		line-height: 150px;
+		width: 150px;
+		
+	}
+	h4.blog{
+		font-size:22px;
+	}
+	section#contact div.inner-left{
+		padding:58px 0px 100px;
+	}
+	section#contact i.fa{
+		line-height:50px;	
+		font-size:20px;
+		height: 50px;
+		width: 50px;
+	}
+	div.skillbars h4.black{
+		margin-bottom:57px;
+	}
+	div.overlay p{
+		font-size:30px ! important;
+		margin-bottom:10px;
+	}
+	div.overlay i.fa{
+		height: 50px ! important;
+		width: 50px ! important;
+		line-height: 50px ! important;
+		font-size:20px ! important;
+	}
+}
+
+/*=====================================================================
+						The Website is End
+=====================================================================*/

@@ -1,0 +1,77 @@
+html,
+body {
+    height: 100%;
+    background: #f2f2f2;
+}
+
+
+/* Controls
+---------------------------------------------------------------------- */
+
+.controls {
+    font-size: 12px;
+	text-align:center;
+}
+.controls button{
+	text-transform:uppercase;
+}
+.control {
+    position: relative;
+    display: inline-block;
+    background: transparent;
+    cursor: pointer;
+    font-size:16px;
+    color: #444;
+    -webkit-transition: background 150ms;
+    -moz-transition: background 150ms;
+    -webkit-transition: background 150ms;
+	padding:10px 15px;
+	outline:0;
+	border:0;
+}
+
+.control:hover {
+    background: #fff;
+}
+.mixitup-control-active {
+    background: transparent;
+	border:2px solid #fb7700;
+}
+
+.mixitup-control-active[data-filter]:after {
+    background: transparent;
+}
+
+.control:first-of-type {
+    border-radius: 3px 0 0 3px;
+}
+
+.control:last-of-type {
+    border-radius: 0 3px 3px 0;
+}
+
+/* Container
+---------------------------------------------------------------------- */
+
+.content {
+    text-align: center;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.mix {
+    background: #fff;
+    position: relative;
+}
+/* responsive
+---------------------------------------------------------------------- */
+
+@media only screen and (max-width:400px) {
+	.mix{
+		margin-bottom:10px;
+	}
+}
+@media only screen and (min-width:401px) and (max-width:603px) {
+	.mix{
+		margin-bottom:10px;
+	}
+}

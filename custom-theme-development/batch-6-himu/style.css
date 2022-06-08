@@ -1,0 +1,113 @@
+/*
+
+	Theme Name: Batch-6 Himu
+	Theme URI: http://www.batch-6.com/himu
+	Author: Batch-6
+	Author URI: http://www.batch-6.com
+	Version: 1.0
+	Description: This is a custom Theme for WordPress.
+	Tags: Custom Theme, Basic Theme, Responsive, Bootstrap.
+
+*/
+
+body.customize-support header {
+    top: 32px;
+}
+
+div#wpadminbar, div#wp-toolbar {
+    overflow: inherit;
+}
+
+a.no-logo:hover, a.no-logo:focus {
+    color: #fc7700 !important;
+}
+
+a.no-logo {
+    font-size: 20px;
+    margin-top: 11px;
+}
+
+section.slider {
+    padding-top: 0px;
+}
+div.header {
+    margin-top: 90px;
+    background: #ddd;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+div.body-bg{
+	height: 700px;
+}
+section#single-post, section.archive, section#page, section.contact-page, section.search, section.blog-section, section#teams{
+    padding-top: 90px;
+}
+span.subtitle {
+    display: block;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 5px;
+    color: #777;
+}
+
+section.archive div.inner{
+    margin-bottom: 35px;
+}
+section.search div.inner{
+    margin-bottom: 35px;
+}
+section.archive span.vcard{
+    font-size: 30px !important;
+}
+form#searchform {
+    display: none;
+}
+
+.my-form{
+    width: 100%;
+}
+form.wpcf7-form textarea.form-control {
+    height: 114px !important;
+    resize: vertical;
+}
+input.send {
+    padding: 10px 35px;
+    display: block;
+    cursor: pointer;
+    background: #fb7700;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    margin: 20px auto 0;
+    color: #fff;
+}
+section.blog-section div.inner {
+    margin-bottom: 30px;
+}
+
+div.himu_pagination {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+div.himu_pagination div.wp-pagenavi {
+    padding: 30px 0px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    form#searchform {
+        position: absolute;
+        right: 40px;
+        top: 70px;
+        z-index: 999999;
+        background: #ddd;
+        padding: 10px;
+    }
+    header div{
+        overflow: inherit !important;
+    }
+}

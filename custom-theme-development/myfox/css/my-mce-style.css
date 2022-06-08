@@ -1,0 +1,27 @@
+div#mceu_15{
+	border:1px solid #ccc;
+    -webkit-box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08);
+    box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08);
+    outline: 0;	
+    /*margin-top: 4px;*/
+}
+div#mceu_15 button i.mce-i-New-Button{
+    background: url(../img/Landing_page/shortcode_logo.png) no-repeat center center;
+    width: 26px;
+    height: 17px;
+    background-size: contain;
+}
+div#mceu_15:hover{
+    background: #fafafa;
+    border-color: #999;
+    color: #23282d;
+    -webkit-box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08);
+    box-shadow: inset 0 1px 0 #fff,0 1px 0 rgba(0,0,0,.08);
+    outline: 0;	
+}
+.mce-btn i.mce-caret {}
+.mce-btn button#mceu_15-open i.mce-caret{
+    margin-right: 4px;
+    margin-top: 7px; 
+}
+.mce-active button#mceu_15-open i.mce-caret{margin-top: 5px;}
