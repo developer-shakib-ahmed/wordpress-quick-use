@@ -1,32 +1,5 @@
 <?php 
 
-
-function my_test_function(){
-
-  // Get the value of the current screen
-  $currentScreen = get_current_screen();
-
-  // Get the value of the pswas settings 
-  $options = get_option( 'pswas_options' );
-?>
-
-  <?php if($currentScreen->base == "toplevel_page_pswas"): ?>
-  <div style="margin-left: 180px;">
-    <h1>Hello Output</h1>
-    <?php 
-      var_dump(isset($options["pswas_enable_masonry"]));
-    ?>
-  </div>
-  <?php endif; ?>
-
-<?php
-}
-add_action('admin_head', 'my_test_function');
-
-
-
-
-
 /**
  * Add shortcode function for post display
  */
