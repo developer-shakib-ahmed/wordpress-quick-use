@@ -1,0 +1,146 @@
+.pswas-posts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pswas-posts .pswas-post {
+  flex-wrap: wrap;
+  flex: 0 0 30.33%;
+  margin: 0px 1.5%;
+  margin-bottom: 3%;
+}
+
+.pswas-posts .pswas-inner {
+  box-shadow: 0 5px 19px -5px rgb(0 0 0 / 10%);
+  height: 100%;
+}
+
+.pswas-posts .pswas-thumb a {
+  display: block;
+}
+
+.pswas-posts .pswas-thumb img {
+  display: block;
+  border: 10px solid #fff;
+  max-height: 180px;
+  object-fit: cover;
+}
+
+.pswas-posts .pswas-content {
+  padding: 10px 20px;
+}
+
+.pswas-posts .pswas-meta {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+  padding: 5px 0px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.pswas-posts .pswas-excerpt p,
+.pswas-posts p.more {
+  margin-bottom: 15px;
+}
+
+.pswas-posts .pswas-author,
+.pswas-posts .pswas-date {
+  display: flex;
+  align-items: center;
+}
+
+.pswas-posts .pswas-author svg,
+.pswas-posts .pswas-date svg{
+  width: 12px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.pswas-posts .pswas-date svg{
+  width: 14px;
+}
+
+.pswas-posts .pswas-title h2 {
+  margin: 0;
+}
+
+.pswas-posts .pswas-title a {
+  display: block;
+  text-decoration: none;
+  line-height: 26px;
+  font-size: 22px;
+}
+
+.pswas-posts p.more a {
+  text-decoration: none;
+  font-size: 18px;
+  align-items: center;
+  display: inline-block;
+}
+
+.pswas-posts p.more a svg {
+  position: relative;
+  left: 6px;
+  top: 2px;
+  transition: 0.2s;
+  width: 14px;
+  height: auto;
+}
+
+.pswas-posts p.more a:hover svg{
+  left: 15px;
+}
+
+
+
+/* 
+ * css for carousel style
+ */
+.pswas-posts.pswas-style-carousel .owl-stage {
+  display: flex;
+  padding-bottom: 40px;
+}
+.pswas-posts.pswas-style-carousel .pswas-post {
+  margin: 15px;
+  height: 100%;
+}
+.pswas-posts.pswas-style-carousel .owl-nav {
+  margin: 0;
+}
+.pswas-posts.pswas-style-carousel .owl-nav button {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 20px 10px !important;
+  font-size: 20px;
+  font-family: monospace;
+  outline: 0;
+}
+.pswas-posts.pswas-style-carousel p.more {
+  margin-bottom: 0;
+}
+.pswas-posts.pswas-style-carousel .pswas-content {
+  padding-bottom: 0;
+}
+
+
+
+/* 
+ * css for masonry style
+ */
+.pswas-posts.enable-masonry {
+  display: block;
+}
+.pswas-posts.enable-masonry .pswas-post {
+  float: left;
+  width: 30.33%;
+}
+.pswas-posts.enable-masonry .pswas-inner {
+  height: unset;
+}
+.pswas-posts.enable-masonry .pswas-thumb img {
+  max-height: unset;
+  object-fit: unset;
+}
