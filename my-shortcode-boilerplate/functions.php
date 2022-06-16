@@ -166,5 +166,3 @@ add_shortcode("fruitful_video_carousel", "fruitful_video_carousel_shortcode");
   [vc_gallery type="image_grid" images="129,268,400,124,324,305" layout="3" masonry_style="true" item_spacing="10px" gallery_style="7" load_in_animation="none" img_size="large"]
 */
 
-
-

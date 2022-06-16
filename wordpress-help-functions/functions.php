@@ -256,7 +256,7 @@ function my_taxonomies_name() {
     'add_or_remove_items'   => 'Add or remove '.$plural_name,
     'choose_from_most_used' => 'Choose from most used '.$plural_name,
     'menu_name'             => $plural_name,
-    'not_found'             =>  'No '.$plural_name.' found.',
+    'not_found'             => 'No '.$plural_name.' found.',
   );
 
   $args = array(
