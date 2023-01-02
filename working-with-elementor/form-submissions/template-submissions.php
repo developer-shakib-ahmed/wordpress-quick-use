@@ -17,19 +17,23 @@ get_header(); ?>
         
         if (isset($_GET['id'])) {
             $getTrackingID = $_GET['id'];
+            
+            echo "<h5>Tracking ID: {$getTrackingID}</h5>";
           
             global $wpdb;
             $tableName = "{$wpdb->prefix}e_submissions_values";
             
-            $getValueByTrackingID = $wpdb->get_results( "SELECT * FROM $tableName WHERE value = {$getTrackingID}", OBJECT );
+            $getValueByTrackingID = $wpdb->get_results( "SELECT * FROM $tableName WHERE value = '{$getTrackingID}'", OBJECT );
             
             $submissionID = $getValueByTrackingID[0]->submission_id;
             
             $getSubmissionByTrackingID = $wpdb->get_results( "SELECT * FROM $tableName WHERE submission_id = {$submissionID}", OBJECT );
             
-            foreach($getSubmissionByTrackingID as $data){
-                echo "<p>{$data->key}: {$data->value}</p>";
-            }
+            echo "<p>";
+                foreach($getSubmissionByTrackingID as $data){
+                    echo "{$data->key}: {$data->value}<br>";
+                }
+            echo "</p>";
             
         }
         else {
