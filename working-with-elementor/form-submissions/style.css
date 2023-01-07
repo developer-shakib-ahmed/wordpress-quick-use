@@ -1,0 +1,46 @@
+/*
+  Elementor form date & time field placeholder not showing issue solved on mobile
+
+  https: //github.com/flatpickr/flatpickr/issues/1094
+
+  https: //github.com/elementor/elementor/issues/10527
+*/
+
+input[type="date"]:before {
+  color: rgba(53, 53, 53, 0.44);
+  content: attr(placeholder);
+}
+
+input[type="date"].full:before {
+  color: black;
+  content: "" !important;
+}
+
+input[type="time"]:before {
+  color: rgba(53, 53, 53, 0.44);
+  content: attr(placeholder);
+}
+
+input[type="time"].full:before {
+  color: black;
+  content: "" !important;
+}
+
+
+
+
+
+/* Custom */
+
+input#form-field-landing_time:before {
+  color: #999 !important;
+  content: attr(placeholder) !important;
+}
+
+/*input#form-field-landing_time:focus:before {*/
+/*  display: none;*/
+/*}*/
+
+input#form-field-landing_time:not([value=""]):before {
+  display: none;
+}
