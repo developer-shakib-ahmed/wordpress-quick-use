@@ -1,3 +1,7 @@
+/*
+  https://www.the-art-of-web.com/javascript/validate-date/
+*/
+
 jQuery(window).on('load', function () {
   if (window.innerWidth <= 767) {
     let flatpickrInput = jQuery('.flatpickr-input.flatpickr-mobile');
@@ -8,8 +12,25 @@ jQuery(window).on('load', function () {
       }else{
         flatpickrInput.removeClass('hasValue');
       }
-      console.log('Length: ' + jQuery(this).val().length);
     });
+
+    
+    const priceObj = {
+      'form-field-passengers': [10, 20, 30],
+      'form-field-luggages': [5, 15]
+    }
+
+    let selectFields = jQuery('form select');
+    selectFields.change(function( e ){
+      const priceData = [];
+
+      selectFields.each(function(i){
+        priceData.push(priceObj[selectFields[i].id][selectFields[i].selectedIndex]);
+      });
+
+      console.log(priceData.reduce( (a, b) => a + b, 0 ));
+    });
+
   }
   console.log('-Loaded-');
 });
