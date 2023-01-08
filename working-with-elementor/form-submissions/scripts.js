@@ -55,19 +55,34 @@ jQuery(window).on('load', function () {
 
   // work on mobile view
   if (window.innerWidth <= 767) {
-    let flatpickrTime = jQuery('form .elementor-time-field'); 
-    flatpickrTime.prop('type', 'time').removeClass('flatpickr-input');
-    // jQuery('form .elementor-date-field').prop('type', 'date');
-    jQuery('.flatpickr-mobile').prop('type', 'hidden');
+    setTimeout(() => {
+      let flatpickrDate = jQuery('form .elementor-date-field');
+      let flatpickrTime = jQuery('form .elementor-time-field');
 
-    flatpickrTime.focusout(function () {
-      if(jQuery(this).val().length > 0){
-        jQuery(this).addClass('hasValue');
-      }
-      else{
-        jQuery(this).removeClass('hasValue');
-      }
-    });
+      flatpickrDate.prop('type', 'date').removeClass('flatpickr-input');
+      flatpickrTime.prop('type', 'time').removeClass('flatpickr-input');
+
+      jQuery('form .elementor-date-field').prop('type', 'date');
+      jQuery('.flatpickr-mobile').prop('type', 'hidden');
+
+      flatpickrDate.focusout(function () {
+        if (jQuery(this).val().length > 0) {
+          jQuery(this).addClass('hasValue');
+        }
+        else {
+          jQuery(this).removeClass('hasValue');
+        }
+      });
+
+      flatpickrTime.focusout(function () {
+        if (jQuery(this).val().length > 0) {
+          jQuery(this).addClass('hasValue');
+        }
+        else {
+          jQuery(this).removeClass('hasValue');
+        }
+      });
+    }, 1000);
   }
 
   console.log('-Loaded-');

@@ -6,6 +6,34 @@
   https: //github.com/elementor/elementor/issues/10527
 */
 
+
+@media (max-width: 767px) {
+
+  form .elementor-date-field:before, form .elementor-time-field:before {
+    color: #999 !important;
+    content: attr(placeholder) !important;
+  }
+
+  form .elementor-date-field:focus:before,
+  form .elementor-date-field.hasValue:before,
+  form .elementor-time-field:focus:before,
+  form .elementor-time-field.hasValue:before {
+    display: none;
+  }
+
+  form .elementor-date-field::-webkit-calendar-picker-indicator,
+  form .elementor-time-field::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+  form .elementor-date-field, form .elementor-time-field {
+    -webkit-appearance: none;
+  }
+
+}
+
+
+
 input[type="date"]:before {
   color: rgba(53, 53, 53, 0.44);
   content: attr(placeholder);
