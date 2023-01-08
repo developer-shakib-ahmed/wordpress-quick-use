@@ -1,7 +1,3 @@
-/*
-  https://www.the-art-of-web.com/javascript/validate-date/
-*/
-
 jQuery(window).on('load', function () {
   let selectFields = jQuery('form select');
   let totalPrice = jQuery('form #form-field-total_price');
@@ -59,14 +55,17 @@ jQuery(window).on('load', function () {
 
   // work on mobile view
   if (window.innerWidth <= 767) {
-    let flatpickrInput = jQuery('.flatpickr-input.flatpickr-mobile');
+    let flatpickrTime = jQuery('form .elementor-time-field'); 
+    flatpickrTime.prop('type', 'time').removeClass('flatpickr-input');
+    // jQuery('form .elementor-date-field').prop('type', 'date');
+    jQuery('.flatpickr-mobile').prop('type', 'hidden');
 
-    flatpickrInput.focusout(function () {
+    flatpickrTime.focusout(function () {
       if(jQuery(this).val().length > 0){
-        flatpickrInput.addClass('hasValue');
+        jQuery(this).addClass('hasValue');
       }
       else{
-        flatpickrInput.removeClass('hasValue');
+        jQuery(this).removeClass('hasValue');
       }
     });
   }

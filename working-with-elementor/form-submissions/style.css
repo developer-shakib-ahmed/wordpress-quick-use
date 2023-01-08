@@ -27,7 +27,10 @@ input[type="time"].full:before {
 }
 
 
-
+/* Hide dropdown indicator */
+input[type="date"]:-webkit-calendar-picker-indicator {
+  display: none;
+}
 
 
 /* Custom */
