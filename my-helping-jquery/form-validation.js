@@ -36,5 +36,6 @@ jQuery(document).ready(function () {
   if( jQuery('body').hasClass('page-id-5852') ){
     jQuery('#form-field-firstname').inputFilter(function(value) { return /^[a-z]*$/i.test(value); }, 'Must use alphabetic characters');
     jQuery('#form-field-lastname').inputFilter(function(value) { return /^[a-z]*$/i.test(value); }, 'Must use alphabetic characters');
-  console.log('-Done-');
+    console.log('-Done-');
+  }
 });
