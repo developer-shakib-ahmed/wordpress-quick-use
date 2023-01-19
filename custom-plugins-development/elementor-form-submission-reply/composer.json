@@ -1,0 +1,22 @@
+{
+  "name": "shakib2023/efsr",
+  "description": "Just another elementor addons.",
+  "type": "wordpress-plugin",
+  "license": "GPLv2",
+  "authors": [
+    {
+      "name": "AsusPc",
+      "email": "md.shakibahmed2015@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Shakib\\EFSR\\": "includes/"
+    },
+    "files": [
+      "includes/functions.php"
+    ]
+  }
+}
