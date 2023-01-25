@@ -1,0 +1,11 @@
+:root{
+  --sk-color-primary: #6EC1E4;
+  --sk-color-text: #54595F;
+}
+
+h2.sk-academy-title {
+  background: green;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}

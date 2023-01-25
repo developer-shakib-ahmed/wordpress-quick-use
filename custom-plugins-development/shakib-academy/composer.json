@@ -1,0 +1,22 @@
+{
+  "name": "shakib2023/shakib-academy",
+  "description": "A basic plugin for Shakib Academy",
+  "type": "wordpress-plugin",
+  "license": "GPLv2",
+  "authors": [
+    {
+      "name": "AsusPc",
+      "email": "md.shakibahmed2015@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Shakib\\Academy\\": "includes/"
+    },
+    "files": [
+      "includes/functions.php"
+    ]
+  }
+}
