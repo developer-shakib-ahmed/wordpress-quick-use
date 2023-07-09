@@ -1107,4 +1107,20 @@ function admin_user_query($user_search)
 
 add_action('pre_user_query', 'admin_user_query');
 
+
+
+/**
+ * Filters the HTML script tag of an enqueued script.
+ */
+function add_id_to_script($tag, $handle, $src)
+{
+  if ('elementor-pro-frontend' === $handle) {
+    $tag = '<script type="text/javascript" src="' . esc_url($src) . '" data-custom-attribute="DONE"></script>';
+  }
+
+  return $tag;
+}
+add_filter('script_loader_tag', 'add_id_to_script', 10, 3);
+
+
 ?>
