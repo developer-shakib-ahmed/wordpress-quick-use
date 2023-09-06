@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mmenujs</title>
+
+  <!-- <link rel="stylesheet" href="./mmenu.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/9.3.0/mmenu.min.css">
+  
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- <div> -->
+    <div class="header">
+      <div class="wrap">
+        <div class="logo">
+          <h2>Logo</h2>
+        </div>
+        <a id="mMenuToggle" href="#mobile-menu"><span></span></a>
+        <nav id="mobile-menu">
+          <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/work">Our work</a></li>
+              <li><a href="#">About us</a>
+                  <ul>
+                      <li><a href="/about/history">History</a></li>
+                      <li><a href="#">The team</a>
+                          <ul>
+                              <li><a href="/about/team/management">Management</a></li>
+                              <li><a href="/about/team/sales">Sales</a></li>
+                              <li><a href="/about/team/development">Development</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+              <li><a href="#">Services</a>
+                  <ul>
+                      <li><a href="/services/design">Design</a></li>
+                      <li><a href="/services/development">Development</a></li>
+                      <li><a href="/services/marketing">Marketing</a></li>
+                  </ul>
+              </li>
+              <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <div class="wrap">
+        <p style="width: 290px; margin-left: auto; margin-right: auto;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt temporibus dolorem iure modi eos minus nulla enim optio ipsa unde quam magnam repellat rem, tempore illo porro aperiam id dolore perspiciatis. Minima dolores vitae eaque impedit id asperiores rem expedita delectus optio blanditiis, inventore et totam placeat ducimus officiis temporibus doloribus nesciunt officia architecto autem facilis doloremque. Minus quasi animi adipisci, non, aut exercitationem nam commodi magnam corporis, ducimus deleniti sapiente esse. Rerum, beatae natus. Dignissimos consectetur accusamus ducimus voluptate voluptas eveniet at omnis, cupiditate deleniti nihil nesciunt perferendis ab, libero necessitatibus consequatur consequuntur nulla quasi ratione soluta illum repudiandae!</p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p class="copyright">@ 2023 Shakib. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+  <!-- </div> -->
+
+  <script type='text/javascript' src='https://nouvellevaguestudio.com/wp-includes/js/jquery/jquery.min.js'></script>
+  <script type='text/javascript' src='https://nouvellevaguestudio.com/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+
+  <!-- <script src="./mmenu.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/9.3.0/mmenu.min.js"></script>
+
+  <script>
+    document.addEventListener( "DOMContentLoaded", () => {
+      new Mmenu("#mobile-menu", { navbar: {
+          // title: "My contacts"
+        },
+        searchfield: {
+          // add: true,
+          // addTo: "#contacts"
+        },
+        offCanvas: {
+          position: "right-front"
+        }}, {});
+
+      console.log('-Loaded-');
+    });
+
+    // new Mmenu(document.querySelector("#menu"));
+
+    document.addEventListener("click", function (evnt) {
+      var anchor = evnt.target.closest('a[href="#"]');
+      if (anchor) {
+        alert("Thank you for clicking, but that's a demo link.");
+        evnt.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
