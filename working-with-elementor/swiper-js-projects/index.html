@@ -26,6 +26,10 @@ body{
   padding: 15px;
 }
 
+.swiper_slider h1 {
+    text-align: center;
+}
+
 .wrap {
     width: 100%;
     max-width: 767px;
@@ -38,29 +42,28 @@ body{
 }
 
 .swiper.swiper-initialized {
-    padding: 30px 80px;
-    touch-action: pan-y;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    overflow: clip;
-    z-index: 1;
-    display: block;
+  touch-action: pan-y;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  overflow: clip;
+  z-index: 1;
+  display: block;
 }
 
 .swiper-slide {
-    background: #aaa;
-    padding: 100px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .swiper-button-prev:after, .swiper-button-next:after {
-    font-size: 20px;
-    color: #fff;
-    font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -68,95 +71,267 @@ body{
 }
 
 .swiper-pagination {
-    width: 100%;
-    left: 0;
+  width: 100%;
+  left: 0;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-    margin: 0px 4px;
-    width: 8px;
-    height: 8px;
+  margin: 0px 4px;
+  width: 8px;
+  height: 8px;
 }
 
 .swiper .swiper-notification{
   display: none;
 }
+
+
+div#center_swiper.swiper-initialized {
+  padding: 30px 80px;
+}
+
+div#center_swiper .swiper-slide{
+  padding: 100px 20px;
+}
+
+div#gallery_swiper{
+  padding-top: 20px;
+}
+
+
+div#gallery_swiper img {
+  display: block;
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+div#thumb_swiper {
+  margin-top: 10px;
+}
+
+div#thumb_swiper .swiper-slide {
+  height: 120px;
+  position: relative;
+  cursor: pointer;
+}
+
+div#thumb_swiper .swiper-slide:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+div#thumb_swiper .swiper-slide:hover:after{
+  opacity: 0.5;
+}
+
+div#thumb_swiper .swiper-slide-thumb-active:hover:after,
+div#thumb_swiper .swiper-slide-thumb-active:after{
+  opacity: 0;
+}
+
+div#thumb_swiper .swiper-slide img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 </style>
 
 </head>
 <body>
-  
-<section class="swiper_slider">
-  <div class="wrap">
-    <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <h2>Slide 1</h2>
-        </div>
-        <div class="swiper-slide">
-          <h2>Slide 2</h2>
-        </div>
-        <div class="swiper-slide">
-          <h2>Slide 3</h2>
-        </div>
-        <div class="swiper-slide">
-          <h2>Slide 4</h2>
-        </div>
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-  
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-  
-      <!-- If we need scrollbar -->
-      <!-- <div class="swiper-scrollbar"></div> -->
-    </div>
-  </div>
-</section>
-
-
-<!-- Scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script>
-  jQuery(document).ready(function () {
-    const swiper = new Swiper('.swiper', {
-      loop: true,
-      speed: 500,
-      spaceBetween: 10,
-      slidesPerView: 1,
-      grabCursor: true,
-      centeredSlides : true,
-      roundLengths: true,
-
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-
-      // And if we need scrollbar
-      scrollbar: false, //{el: '.swiper-scrollbar',},
-    });
-
-    // swiper.allowTouchMove = true;
-
-    console.log(swiper);
     
-    console.log('Ready');
-  });
-</script>
+  <section class="swiper_slider">
+    <div class="wrap">
+      <h1>Center Slider</h1>
+      <!-- Slider main container -->
+      <div id="center_swiper" class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <h2>Slide 1</h2>
+          </div>
+          <div class="swiper-slide">
+            <h2>Slide 2</h2>
+          </div>
+          <div class="swiper-slide">
+            <h2>Slide 3</h2>
+          </div>
+          <div class="swiper-slide">
+            <h2>Slide 4</h2>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    </div>
+  </section>
+
+
+  <section class="swiper_slider">
+    <div class="wrap">
+      <h1>Gallery Slider</h1>
+      <!-- Slider main container -->
+      <div id="gallery_swiper" class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="nature-1">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="nature-2">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="nature-3">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="nature-4">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="nature-5">
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+
+      <div id="thumb_swiper" class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="nature-1">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="nature-2">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="nature-3">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="nature-4">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="nature-5">
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    jQuery(document).ready(function () {
+      const centerSwiper = new Swiper('#center_swiper', {
+        loop: true,
+        speed: 500,
+        spaceBetween: 10,
+        slidesPerView: 1,
+        grabCursor: true,
+        centeredSlides : true,
+        roundLengths: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: false, //{el: '.swiper-scrollbar',},
+      });
+
+
+      const thumbSwiper = new Swiper('#thumb_swiper', {
+        loop: true,
+        speed: 500,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+
+        // Navigation arrows 
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+
+      const gallerySwiper = new Swiper('#gallery_swiper', {
+        loop: true,
+        speed: 500,
+        spaceBetween: 10,
+        slidesPerView: 1,
+        grabCursor: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        thumbs: {
+          swiper: thumbSwiper,
+        },
+
+        // And if we need scrollbar
+        scrollbar: false, //{el: '.swiper-scrollbar',},
+      });
+
+      
+      console.log('Ready');
+    });
+  </script>
 
 </body>
 </html>
